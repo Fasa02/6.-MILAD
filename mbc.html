@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBC</title>
+    <link rel="stylesheet" href="iesmo.css">
+    <script src="https://kit.fontawesome.com/be7bd2de82.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="asset/img/log_grsf.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.2/viewer.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.2/viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo"><img src="asset/img/title.png" height="36px"></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="/" onclick="toggleMenu();">Home</a></li>
+            <li><a href="/#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="/#project" onclick="toggleMenu();">Lomba</a></li>
+            <li><a href="/#expert" onclick="toggleMenu();">FAQ</a></li>
+        </ul>
+    </header>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="what">
+                <div class="pamflet">
+                    <img id="image" onclick="viewer.show()" src="asset/img/mbc_2023.png">
+                </div>
+            </div>
+            <div class="what">
+                <h2 class="titleText"><span>MBC</span></h2>
+                <p>MBC (Mantsani Badminton Competition) adalah ajang pertandingan bulutangkis yang di selenggarakan oleh
+                    Mantsani Badminton Club yang di laksanakan di MAN 2 kota kediri yang diikuti oleh siswa SMP/MTS se
+                    Karisidenan Kediri.</p>
+                <a style="text-decoration: none" href="asset/doc/Booklet MBC 2023.pdf"><button>
+                        <span>Juknis</span>
+                        <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                            <path
+                                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                fill="black"></path>
+                        </svg>
+                    </button></a>
+                <button>
+                    <span>CP (Asna)</span>
+                    <a style="text-decoration: none" href="https://wa.me/+6281259924636"><svg width="34" height="34"
+                            viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </svg>
+                        <ul class="ulist">
+                            <li class="ilist">
+                                <a href="https://wa.me/+6281259924636"><i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                </button></a>
+                <button class="cta">
+                    <a style="text-decoration: none"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSf4XFuIeAm8LYtSpf-fZnVLJuHGe9PWROQrG_QYIzN5Sq9BQA/viewform?usp=sf_link">
+                        <span>Daftar Sekarang</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg></a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="socialMedia">
+        <img src="asset/img/log_grsf.png" width="110px">
+        <ul class="ulist">
+            <li class="ilist">
+                <a href="https://instagram.com/miladmantsani?igshid=NDk5N2NlZjQ="><i
+                        class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="ilist">
+                <a href="https://www.youtube.com/@garvimantsaniartoffame3"><i class="fa-brands fa-youtube"></i></a>
+            </li></a>
+        </ul>
+    </div>
+    <ul class="flex gap-2 justify-center sm:justify-start">
+        </div>
+        <div class="copyrightText">
+            <p>Copyright 2023 <span>Mantsani</span></p>
+        </div>
+        <script src="/menu.js"></script>
+        <script type="text/javascript">
+            const viewer = new Viewer(document.getElementById('image'), {
+                inline: false,
+                viewed() {
+                    viewer.zoomTo(0.2);
+                },
+            });
+        </script>
+</body>
+
+</html>

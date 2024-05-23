@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka';
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100px;
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background: linear-gradient(to right, rgb(110, 2, 2), rgb(202, 106, 50));
+}
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+    font-size: large;
+    margin-left: 70px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: rgb(1, 0, 0);
+    font-weight: 300;
+}
+header .navigation li a:hover
+{
+    color: #fcf1f4;
+}
+header.sticky .navigation li a
+{
+    color: #111;
+}
+header.sticky .navigation li a:hover
+{
+    color: #9c9497;
+}
+
+section.about
+{
+    padding: 50px;
+    background: rgb(155, 77, 33);
+}
+
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-left: 8%;
+    padding-right: 15%;
+    padding-bottom: 60px;
+}
+.row .what
+{
+    position: relative;
+    width: 100%;
+    font-size: 1.2em;
+    text-shadow: 0 5px 70px rgb(31, 13, 2);
+    text-justify: distribute;
+
+}
+
+.titleText
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span
+{
+    color:rgb(249, 167, 43);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.row .what .pamflet
+{
+    position: relative;
+    width: 300px;
+    height: 425px;
+}
+.row .what .pamflet img
+{
+    position: relative;
+    width: 300px;
+    height: 425px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 5px 50px rgb(89, 34, 3);
+    align-self: center;
+    margin-left: 40%;
+    margin-right: 50%;
+    transition:0.4s;
+
+
+}
+
+
+
+button {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 4px 25px;
+    border-radius: 90px;
+    background: rgb(240, 168, 81);
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-top:6%;
+    filter: drop-shadow( 0 0px 10px rgba(11, 7, 7, 0.826));
+  }
+  
+ 
+  button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover svg {
+    transform: translateX(5px);
+  }
+  
+
+
+@media (min-width:430px)
+{
+    .row .what .pamflet img:hover
+    {
+        width: 105%;
+        height: 110%;
+    }
+    .cta {
+        position: relative;
+        margin-top:6%;
+        padding: 12px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+        filter: drop-shadow( 0 0px 10px rgba(11, 7, 7, 0.826));
+        
+       }
+       
+       .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background:  rgb(240, 168, 81);
+        width: 45px;
+        height: 45px;
+        transition: all 0.5s ease;
+       }
+       
+       .cta span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color:  rgb(69, 2, 2);
+       }
+       
+       .cta svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: rgb(69, 2, 2);
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.5s ease;
+       }
+       
+       .cta:hover:before {
+        width: 100%;
+        background: rgb(240, 168, 81);
+       }
+       
+       .cta:hover svg {
+        transform: translateX(0);
+       }
+       
+       .cta:active {
+        transform: scale(0.95);
+       }
+       .ulist
+        {
+            position: under;
+            display: flex;
+        }
+        .ulist .ilist
+        {
+            position: relative;
+            list-style: none;
+            margin: 7%;
+            margin-left: 1%;
+            cursor: pointer;
+        }
+        .ulist .ilist a
+        {
+            text-decoration: none;
+        }
+        .ulist .ilist a .fa-brands
+        {
+            font-size: 2em;
+            color: #222;
+        }
+  
+        }
+        
+
+    
+
+
+@media (max-width:430px)
+{
+    button {
+        cursor: pointer;
+        font-weight: 700;
+        font-family: Helvetica,"sans-serif";
+        transition: all .2s;
+        padding: 7px 25px;
+        border-radius: 90px;
+        background: rgb(240, 168, 81);
+        border: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        margin-top:15%;
+        filter: drop-shadow( 0 0px 10px rgba(11, 7, 7, 0.826));
+      }
+      
+     
+      button > svg {
+        width: 34px;
+        margin-left: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      button:hover svg {
+        transform: translateX(5px);
+      }
+      .cta {
+        position: relative;
+        margin-top:20%;
+        padding: 12px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+        filter: drop-shadow( 0 0px 10px rgba(11, 7, 7, 0.826));
+        
+       }
+       
+       .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 20px;
+        background:  rgb(240, 168, 81);
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease;
+       }
+       
+       .cta span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color:  rgb(69, 2, 2);
+       }
+       
+       .cta svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: rgb(69, 2, 2);
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.5s ease;
+       }
+       
+       .cta:hover:before {
+        width: 100%;
+        background: rgb(240, 168, 81);
+       }
+       
+       .cta:hover svg {
+        transform: translateX(0);
+       }
+       
+       .cta:active {
+        transform: scale(0.95);
+       }
+       .ulist
+    {
+        position: under;
+        display: flex;
+    }
+    .ulist .ilist
+    {
+        position: relative;
+        list-style: none;
+        margin: 15%;
+        cursor: pointer;
+    }
+    .ulist .ilist a
+    {
+        text-decoration: none;
+    }
+    .ulist .ilist a .fa-brands
+    {
+        font-size: 2em;
+        color: #222;
+    }
+
+    }
+
+
+
+
+.copyrightText
+{
+    padding: 8px 40px;
+    text-align: center;
+    background: rgb(155, 66, 33);
+}
+.copyrightText p
+{
+    color: #fff;
+}
+.copyrightText p span
+{
+    color: rgb(59, 29, 12);
+    font-weight: 500;
+}
+@media (max-width: 930px)
+{
+   
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 60px);
+        position: fixed;
+        top: 60px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgb(155, 77, 33);
+    }
+    header .navigation li
+    {
+        margin-left: 0;
+    }
+    header .navigation li a
+    {
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(Asset/img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(Asset/img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+    section
+    {
+        padding: 20px;
+    }
+    .row
+    {
+        flex-direction: column;
+    }
+    .row .what
+    {
+        position: relative;
+        width: 80%;
+        text-shadow: 0 5px 70px rgb(31, 13, 2);
+    }
+
+    .row .what .pamflet
+    {
+        position: relative;
+        width: 210px;
+        height: 280px;
+        margin-right: 100px;
+        margin-bottom: 20%;
+    }
+
+    .row .what .pamflet img
+    {
+        position: relative;
+        width: 210px;
+        height: 280px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 5px 50px rgb(89, 34, 3);
+        align-self: center;
+        margin-left: 0%;
+        margin-right: 0%;
+        transition:0.4s;
+    }
+
+
+
+    .row .what1
+    {
+        position: relative;
+        width: 80%;
+    }
+    .row .what .pamflet
+    {
+        height: 300px;
+        margin-top: 20px;
+        max-width: 110%;
+    }
+    .menu .content
+    {
+        margin-top: 20px;
+    }
+    .title
+    {
+        text-align: center;
+    }
+    .titleText
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    
+    
+}
+
+.socialMedia
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background: rgb(155, 66, 33);
+    border-top: 1px;
+    
+}
+.socialMedia .ulist
+{
+    position: under;
+    display: flex;
+}
+.socialMedia .ulist .ilist
+{
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.socialMedia .ulist .ilist a
+{
+    text-decoration: none;
+}
+.socialMedia .ulist .ilist a .fa-brands
+{
+    font-size: 2em;
+    color: #222;
+}
+
